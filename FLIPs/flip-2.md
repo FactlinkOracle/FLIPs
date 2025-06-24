@@ -75,7 +75,7 @@ This design is a deliberate trade-off, prioritizing flexibility and richness ove
 - **Four-Outcome Model:** The `0, 1, 2, 3` model is critical for deterministic resolution. It cleanly separates a **truly unresolvable query (`2`)** from a **procedurally invalid request (`3`)**. This prevents attackers from forcing premature settlements and gives voters a clear way to dismiss invalid requests without having to answer the underlying question.
 - **Explicit Timestamps:** The mandatory `resolutionTime` field removes ambiguity for voters, making the check for prematurity (`vote 3`) a simple, deterministic timestamp comparison.
 
-# Implementation Guide for FVM Voters
+# Implementation Guide for DVM Voters
 
 If a query of type `GENERAL_YES_NO_QUERY` is escalated to the DVM, voters **must** follow this precise algorithm to determine their vote:
 

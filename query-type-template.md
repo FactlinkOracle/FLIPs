@@ -20,7 +20,7 @@ _Please explain why you want to add this query type. What types of products or u
 
 # Implementation for Voters
 
-_This section should guide FVM voters on how to resolve a price request of this type if it gets disputed and escalated to the DVM._
+_This section should guide DVM voters on how to resolve a price request of this type if it gets disputed and escalated to the DVM._
 
 When a query of this type is escalated to the Factum DVM, voters will receive a request containing the `query_ipfs_cid` from the original Optimistic Oracle query. Voters must:
 
